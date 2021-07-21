@@ -10,8 +10,8 @@ ghpages.publish('dist', {
 });*/
 
 module.exports = {
-  //mode:  'production',
-  mode: 'development',
+  mode:  'production',
+  //mode: 'development',
 
   entry: './src/app.ts',
   module: {
