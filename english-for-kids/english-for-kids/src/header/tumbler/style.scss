@@ -1,0 +1,58 @@
+.on-off-toggle {
+  width: 80px;
+  height: 24px;
+  position: relative;
+  display: inline-block;
+}
+.on-off-toggle__slider {
+  width: 80px;
+  height: 34px;
+  display: block;
+  border-radius: 34px;
+  background-color: #127ea5;
+  transition: background-color 0.4s;
+  cursor: pointer;
+  &:before {
+    content: "";
+    display: block;
+    background-color: #fff;
+    box-shadow: 0 0 0 1px #949494;
+    top: 5px;
+    height: 23px;
+    left: 5px;
+    position: absolute;
+    transition: 0.4s;
+    width: 23px;
+    z-index: 5;
+    border-radius: 100%;
+  }
+  &:after {
+    display: block;
+    line-height: 34px;
+    text-transform: uppercase;
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    content: "TRAIN";
+    color: #fff;
+    padding-left: 32px;
+    transition: all 0.4s;
+  }
+}
+.on-off-toggle__input {
+  position: absolute;
+  opacity: 0;
+}
+.on-off-toggle__input:checked + .on-off-toggle__slider {
+  background-color: #f1e60a;
+
+  &:before {
+    transform: translateX(48px);
+  }
+  &:after {
+    content: "PLAY";
+    color: #127ea5;
+    padding-left: 10px;
+  }
+}

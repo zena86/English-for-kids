@@ -1,0 +1,80 @@
+.statistic__box {
+  width: 100%;
+}
+/*Btns*/
+.statistic__btns {
+  display: flex;
+  margin: 50px 0 30px 50px;
+}
+.btn {
+  padding: 15px 20px;
+  border: 1px solid #127ea5;
+  border-radius: 3px;
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background-color: #127ea5;
+}
+.btn:hover {
+  cursor: pointer;
+  border: 1px solid transparent;
+  background-color: #f1e60a;
+  border: 1px solid #f1e60a;
+  color: #127ea5;
+  transition: all 0.3s ease;
+}
+.btn_left {
+  margin-right: 10px;
+}
+.active-btn {
+  color: #127ea5; 
+  background-color: #fff;
+  border: 1px solid #127ea5;
+}
+#repeat-btn {
+  text-decoration: none;
+}
+/*Score table*/
+.table {
+	width: 100%;
+	border: none;
+	margin-bottom: 20px;
+  font-family: Roboto, sans-serif;
+}
+.table thead th {
+	font-weight: bold;
+	text-align: left;
+	border: none;
+	padding: 10px 15px;
+	background: #299fca;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+}
+.table thead th:hover {
+  cursor: pointer;
+}
+.table tbody td {
+	text-align: left;
+	padding: 10px 15px;
+	vertical-align: top;
+  color: #127ea5;
+  font-size: 20px;
+}
+.table thead tr th:first-child, .table tbody tr td:first-child {
+	border-left: none;
+}
+.table thead tr th:last-child, .table tbody tr td:last-child {
+	border-right: none;
+}
+.table tbody tr:nth-child(even) {
+  background: #dff0f9;
+}
+.table tbody tr:nth-child(odd) {
+  background-color: #fff;
+}
